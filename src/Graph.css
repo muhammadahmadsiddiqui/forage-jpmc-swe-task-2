@@ -1,4 +1,25 @@
 perspective-viewer {
   height: 50vh;
   width: 700px;
+  border: 2px solid #FF5733; /* Neon Orange Border */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #FF5733; /* Neon Glow */
+  background: #000000; /* Black Background */
+}
+
+/* Additional CSS for neon styling */
+perspective-viewer .perspective-axis {
+  color: var(--axis-color);
+}
+
+perspective-viewer .perspective-grid {
+  stroke: var(--grid-color);
+}
+
+perspective-viewer .perspective-label {
+  color: var(--label-color);
+}
+
+perspective-viewer .perspective-line {
+  stroke: var(--line-color);
 }

@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   min-height: 100vh;
+  background: #0d0d0d; /* Dark background for the app */
+  color: #ffffff; /* White text for contrast */
 }
 
 .App-logo {
@@ -15,10 +17,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   margin-bottom: 12px;
+  color: #FF5733; /* Neon Green for header text */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #rgba(255, 87, 51, 0.8) ; /* Keep link color as is or adjust for neon effect */
 }
 
 .App-content {
@@ -29,14 +32,31 @@
   margin-bottom: 12px;
 }
 
-.Stream-button {
+.my-button {
   margin-bottom: 12px;
+  background: #FF5733 !important; /* Neon Orange background for button */
+  border: none;
+  color: #ffffff !important; /* White text color */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 87, 51, 0.8) !important; /* Neon Glow */
+  transition: background-color 0.3s ease;
+}
+
+.my-button:hover {
+  background: #FF6F00 !important; /* Slightly lighter orange on hover */
 }
 
 .Graph {
   min-height: 50vh;
   width: 700px;
   margin-bottom: 12px;
+  border: 2px solid #FF5733; /* Neon Orange Border */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #FF5733; /* Neon Glow */
+  background: #000000; /* Black Background */
 }
 
 @keyframes App-logo-spin {
@@ -47,3 +67,5 @@
     transform: rotate(360deg);
   }
 }
+
+
